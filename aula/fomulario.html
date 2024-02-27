@@ -9,13 +9,16 @@
 <body>
     <h1>formulario de teste</h1>
     <form id="formu">
-        <label for="Nome">Nome</label><br>
+        <label for="Nome">Nome:</label><br>
         <input type="text" id="nome" name="nome"><br><br>
-
-        <label for="Email">Email</label><br>
-        <input type="text" id="Email" name="Email"><br>
-        <button></button>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="Email"><br><br>
+        <button type="button" onclick="submeter()">enviar</button>
     </form>
     
+    <div id="resultado"></div>
+
+    <script src="formulario.js"></script>
+
 </body>
 </html>
