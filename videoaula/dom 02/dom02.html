@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventos dom</title>
+    <style>
+        #area1{
+            font: normal 20px arial;
+            background-color: bisque;
+            color: black;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="area1" ">
+        Aperte...
+    </div>
+    
+    <script>
+        const a = document.querySelector('#area1')
+        a.addEventListener('click', toque)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', saiu)
+
+        function toque(){
+            a.innerHTML = 'deu certo'
+            a.style.background = 'blue'
+        }
+        function entrar(){
+            a.innerHTML = 'dentro'
+            a.style.background = 'red'
+        }
+        function saiu(){
+            a.innerHTML = 'fora'
+            a.style.background = 'green'
+        }
+        
+    </script>
+</body>
+</html>
